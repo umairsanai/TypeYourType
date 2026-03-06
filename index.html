@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeYourType - Speed Typing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="logo">typeyourtype</h1>
+            <nav class="nav">
+                <span class="mode active">type</span>
+                <span class="nav-item">time</span>
+                <span class="nav-item">words</span>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main">
+            <!-- Top Stats -->
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-label">wpm</span>
+                    <span class="wpm-value stat-value">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">acc</span>
+                    <span class="accuracy-value stat-value">100%</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">time</span>
+                    <span class="time-value stat-value">60s</span>
+                </div>
+            </div>
+
+            <!-- Typing Box -->
+            <div class="typing-container">
+                <div class="words" id="wordsContainer">
+                </div>
+                <input 
+                    type="text" 
+                    class="hidden-input" 
+                    id="typingInput" 
+                    autocomplete="off"
+                    spellcheck="false"
+                >
+            </div>
+
+            <!-- Bottom Controls -->
+            <div class="controls">
+                <button class="btn restart-btn" id="restartBtn">
+                    <span>restart</span>
+                    <span class="shortcut">tab</span>
+                </button>
+                <button class="btn settings-btn">
+                    <span>settings</span>
+                    <span class="shortcut">esc</span>
+                </button>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; Umair Anwar</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
